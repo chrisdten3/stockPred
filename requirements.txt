@@ -2,6 +2,5 @@ streamlit
 numpy
 pandas
 matplotlib
-sklearn.preprocessing
-keras.models
-keras.layers
+sklearn
+keras
