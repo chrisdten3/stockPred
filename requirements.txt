@@ -1,0 +1,11 @@
+streamlit
+numpy
+pandas
+matplotlib
+matplotlib.pyplot
+sklearn.preprocessing
+keras.models
+keras.model.Sequential
+keras.layers
+keras.layers.Dense
+keras.layers.LSTM
