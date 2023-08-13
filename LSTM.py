@@ -13,10 +13,7 @@ st.subheader('This is a stock forecaster made by Chris Tengey (cdt50@georgetown.
 st.write('Here is a list of stock tickers avaliable on yahoo finance https://finance.yahoo.com/lookup/')
 symbol = st.text_input('Your Selectd Stock is...').upper()
 
-if symbol is None:
-    st.write('Once you have entered a stock, the program will start running')
-
-else:
+try:
     data = yf.download(tickers=symbol, period='5y', interval='1d')
     opn = data['Open']
     ds = opn.values
@@ -122,4 +119,6 @@ else:
     plt.legend()
 
     st.pyplot(fig)
-
+    
+except:
+    st.write('Once you have entered a stock, the program will start running')
