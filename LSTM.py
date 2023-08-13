@@ -3,6 +3,7 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
+import tensorflow
 from keras.models import Sequential
 from keras.layers import Dense, LSTM
 
